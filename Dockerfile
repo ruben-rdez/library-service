@@ -1,4 +1,4 @@
-FROM amazoncorretto:21.0.4-alpine3.18
+FROM openjdk:17
 WORKDIR /app
 COPY ./target/library-service.jar /app
 EXPOSE 8080
