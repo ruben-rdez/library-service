@@ -49,4 +49,20 @@ public class BookController {
         String message = bookService.deleteById(id);
         return new ResponseEntity<>(message, HttpStatus.OK);
     }
+
+    @GetMapping("/welcome")
+    public String greetings() {
+        return "Welcome to Library Service";
+    }
+
+    @GetMapping("/login")
+    public String login() {
+        return "Logging to Library Service";
+    }
+
+    @GetMapping("/logout")
+    public String logout() {
+        return "Logging out from Library Service";
+    }
+
 }
