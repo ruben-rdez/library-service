@@ -65,4 +65,9 @@ public class BookController {
         return "Logging out from Library Service";
     }
 
+    @GetMapping("/home")
+    public String home() {
+        return "Welcome to Home Library Service";
+    }
+
 }
