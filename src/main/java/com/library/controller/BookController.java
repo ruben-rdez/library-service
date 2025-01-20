@@ -70,4 +70,8 @@ public class BookController {
         return "Welcome to Home Library Service";
     }
 
+    @GetMapping("/health")
+    public String health() {
+        return "Library Service is up and running";
+    }
 }
