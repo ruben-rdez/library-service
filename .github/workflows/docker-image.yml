@@ -43,5 +43,5 @@ jobs:
         context: .
         push: true
         tags: |
-          ${{ env.jrubenrm/library-service }}:latest
-          ${{ env.jrubenrm/library-service }}:${{ github.sha }}
+          ${{ env.IMAGE_NAME }}:latest
+          ${{ env.IMAGE_NAME }}:${{ github.sha }}
